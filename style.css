@@ -1,0 +1,277 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2{
+    font-size: 38px;
+    color:#F9FAF8;
+    font-weight: 800;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin-right: 15%;
+    
+}
+
+ul a{
+    text-decoration-line: none;
+    color:#E5E7EB;
+    font-size: 18px;
+    margin-right:16px;
+}
+
+.button{
+    text-decoration-line: none;
+    color:#E5E7EB;
+    background-color: #3882F6;
+    border-style:solid;
+    padding: 8px 28px;
+    border-radius: 5px;
+    border:0px;
+    margin:10px 0 10px 0;
+    text-align: center;
+    display: block;
+    max-width: fit-content;
+
+}
+
+.button:hover{
+    background-color: white;
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.header {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+.logo {
+    justify-content: flex-start;
+    font-size: 24px;
+    color:#F9FAF8;
+    padding: 10px 0 0 12%;
+}
+
+
+.home {
+    background-color: #1F2937;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:80px 0 0 12%;
+    margin:auto;
+
+}
+
+.home-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    margin:0px;
+    
+}
+
+.home-info > h2{
+    margin:0 0 0 0;
+}
+
+
+.home-image{
+    display: flex;
+    align-items: center;
+    margin: 0% 10% 10% 5%;
+}
+
+.home-image img {
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.features{
+    font-size: 18px;
+    color:#1F2937;
+    display:flex;
+    width:100%;
+    height:100%;
+    margin:auto;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.features-title{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.features-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 20% 0 20%;
+}
+
+.feature{
+    vertical-align: top;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.feature img{
+    width: 100px;
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.testimonial{
+    padding: 5% 20% 5% 20%;
+    background-color: #E5E7EB;
+    font-size: 24px;
+    color:#1F2937;
+    font-style: italic;
+    font-weight: 300px;
+    margin: auto;
+}
+
+.testimonial > p:nth-child(2) {
+    text-align:right;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.cta{
+    padding: 10px 28px;
+    border-radius: 5px;
+    border:0px;
+    margin:3% 13% 3% 13%;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: row;
+}
+
+.cta button{
+    border: 2px solid #F9FAF8;
+    align-self: self-end;
+    margin: 5% 0 5% 15%;
+    justify-content: flex-end;
+    
+}
+
+.cta-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cta-info h4{
+    margin: 7% 0 5px 20px;
+    font-weight: bold;
+}
+
+.cta-info p {
+    margin: 0 -5% 5% 20px;
+    font-size:14px;
+}
+
+.footer{
+    background-color: #1F2937;
+    color:#F9FAF8;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .home-image img {
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .home-image {
+        object-fit: contain;
+        margin: 5% 5% 5% 5%;
+    }
+  }
+
+@media only screen and (max-width: 700px){
+    .features-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .o{
+        margin-left: -5%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .home{
+        flex-direction: column;
+        margin-left: -11%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .home-info{
+        margin: 0 5% 0 5%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .feature img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .cta{
+        margin: 5% 5% 5% 5%;
+        padding: 0% 5% 2% 5%;
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cta button {
+      width: 100%;
+      height: 100%;
+      margin: 5% 0 5% 10%;
+    }
+  }
